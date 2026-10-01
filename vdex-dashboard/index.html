@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VDEX COP — Dashboard</title>
+<meta name="description" content="Discord bot management dashboard — 25+ modules for your community.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237c5cff'/><path d='M9 10h14v3H9zm0 5h14v3H9zm0 5h9v3H9z' fill='white'/></svg>">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar__head">
+    <a class="brand" href="#/overview">
+      <span class="brand__mark">V</span>
+      <span class="brand__text">
+        <strong>VDEX COP</strong>
+        <small>Control Panel</small>
+      </span>
+    </a>
+    <button class="icon-btn sidebar__close" id="navClose" aria-label="Close menu">&#10005;</button>
+  </div>
+
+  <div class="guild-card" id="guildCard"></div>
+
+  <nav class="nav" id="nav" aria-label="Modules"></nav>
+
+  <div class="sidebar__foot">
+    <div class="health" id="healthPill">
+      <span class="health__dot"></span>
+      <span class="health__text">Checking…</span>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ MAIN ============ -->
+<div class="app">
+  <header class="topbar">
+    <button class="icon-btn topbar__burger" id="navToggle" aria-label="Open menu">&#9776;</button>
+
+    <div class="topbar__crumb" id="crumb">
+      <span class="crumb__guild">APEX CHEATS</span>
+      <span class="crumb__sep">/</span>
+      <span class="crumb__page">Overview</span>
+    </div>
+
+    <div class="topbar__search">
+      <span class="search__icon">&#9906;</span>
+      <input type="search" id="moduleSearch" placeholder="Search modules… (press /)" autocomplete="off" aria-label="Search modules">
+      <kbd>/</kbd>
+    </div>
+
+    <div class="topbar__actions">
+      <div id="authBox" class="topbar__auth"></div>
+      <button class="btn btn--ghost" id="btnCustomize">Customize</button>
+      <a class="btn btn--primary" href="#/overview" id="btnOverview">Dashboard</a>
+    </div>
+  </header>
+
+  <main class="content" id="content" tabindex="-1"></main>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<!-- ============ MODAL ROOT ============ -->
+<div class="modal-root" id="modalRoot" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <header class="modal__head">
+      <h3 id="modalTitle">Title</h3>
+      <button class="icon-btn" data-close aria-label="Close">&#10005;</button>
+    </header>
+    <div class="modal__body" id="modalBody"></div>
+    <footer class="modal__foot" id="modalFoot"></footer>
+  </div>
+</div>
+
+<!-- ============ TOASTS ============ -->
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages/core.js"></script>
+<script src="js/pages/moderation.js"></script>
+<script src="js/pages/messaging.js"></script>
+<script src="js/pages/engagement.js"></script>
+<script src="js/pages/utility.js"></script>
+<script src="js/pages/tickets.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

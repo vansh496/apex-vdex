@@ -1,0 +1,25 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- secrets (Render par envVars me jayenge, repo me NAHI) ---
+.env
+
+# --- runtime junk (logs/temp/corrupt — data JSON waghera repo me rehne do) ---
+*.log
+*.tmp
+*.corrupt
+
+# --- bahar ke projects (chhedna/commit nahi karna) ---
+apex-auth/
+New folder (10)/
+discord-lite/
+InFamousUI/
+imgui.ini
+
+# --- editor/OS ---
+.vscode/
+.idea/
+Thumbs.db

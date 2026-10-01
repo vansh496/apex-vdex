@@ -1,0 +1,1706 @@
+{
+  "tickets": {
+    "1554527062570836050": {
+      "channel_id": "1554527062570836050",
+      "guild_id": "1554407195037401200",
+      "type": "purchase",
+      "number": 1,
+      "user_id": "1538218464987058240",
+      "user_tag": "nothere_2008",
+      "user_display": "VANS",
+      "subject": "Penal",
+      "details": "Phonepay",
+      "claimed_by": "1546153129043562506",
+      "claimed_by_tag": "Apex Bot#7583",
+      "claimed_at": "2026-09-29T16:36:01+00:00",
+      "status": "open",
+      "created_at": "2026-09-29T16:15:34+00:00",
+      "closed_at": null,
+      "closed_by": null,
+      "close_reason": null,
+      "control_msg_id": "1554527065217302741",
+      "transcript_path": null,
+      "participants": [
+        "1538218464987058240"
+      ]
+    },
+    "1554528667575521351": {
+      "channel_id": "1554528667575521351",
+      "guild_id": "1554407195037401200",
+      "type": "support",
+      "number": 1,
+      "user_id": "1538218464987058240",
+      "user_tag": "nothere_2008",
+      "user_display": "VANS",
+      "subject": "INFORMATION CHIYA BRO",
+      "details": "Puri nahi",
+      "claimed_by": null,
+      "claimed_by_tag": null,
+      "claimed_at": null,
+      "status": "open",
+      "created_at": "2026-09-29T16:21:57+00:00",
+      "closed_at": null,
+      "closed_by": null,
+      "close_reason": null,
+      "control_msg_id": "1554528670943551560",
+      "transcript_path": null,
+      "participants": [
+        "1538218464987058240"
+      ]
+    }
+  },
+  "counters": {
+    "purchase": 1,
+    "support": 1
+  },
+  "guilds": {
+    "1554407195037401200": {
+      "staff_role_ids": [
+        1554408053548388493
+      ],
+      "support_role_id": null,
+      "panel_channel_id": 1554526921856127077,
+      "log_channel_id": 1554526916759785554,
+      "categories": {
+        "support": 1554526906148323381,
+        "report": 1554526908228829315,
+        "purchase": 1554526910309081213,
+        "other": 1554526914415296522
+      },
+      "max_open_tickets": 3
+    }
+  },
+  "modules": {
+    "1554407195037401200": {
+      "leveling": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "channel": "c1",
+          "messageChannel": false,
+          "minMessageLength": 4,
+          "cooldown": 60,
+          "xpPerMessage": "1-6",
+          "xpPerMinute": 4,
+          "noXpChannels": [
+            "c10",
+            "c11",
+            "c9"
+          ],
+          "leaderboardChannel": "c6",
+          "announceLevelUps": true,
+          "roleRewards": [
+            {
+              "level": 5,
+              "role": "r13",
+              "on": true
+            },
+            {
+              "level": 10,
+              "role": "r12",
+              "on": true
+            },
+            {
+              "level": 20,
+              "role": "r8",
+              "on": true
+            },
+            {
+              "level": 40,
+              "role": "r7",
+              "on": false
+            }
+          ],
+          "levels": [
+            {
+              "lvl": 50,
+              "xp": 22400
+            },
+            {
+              "lvl": 45,
+              "xp": 18100
+            },
+            {
+              "lvl": 40,
+              "xp": 14400
+            },
+            {
+              "lvl": 35,
+              "xp": 11200
+            },
+            {
+              "lvl": 30,
+              "xp": 8500
+            },
+            {
+              "lvl": 25,
+              "xp": 6200
+            },
+            {
+              "lvl": 20,
+              "xp": 4300
+            },
+            {
+              "lvl": 15,
+              "xp": 2800
+            },
+            {
+              "lvl": 10,
+              "xp": 1500
+            },
+            {
+              "lvl": 5,
+              "xp": 500
+            },
+            {
+              "lvl": 1,
+              "xp": 0
+            }
+          ]
+        }
+      },
+      "tickets": {
+        "enabled": true,
+        "cfg": {
+          "activeChannel": "1554407939765182524",
+          "logChannel": "1554407639138701372",
+          "selectCategory": true,
+          "supportPing": "1554505010786861118",
+          "categories": [
+            {
+              "id": "tc2",
+              "label": "EXTERNAL",
+              "emoji": "💳",
+              "color": "#2ecc71",
+              "prefix": "buy",
+              "opens": 268,
+              "cat": "Support"
+            },
+            {
+              "id": "tc1790698841639",
+              "label": "New Category",
+              "emoji": "💬",
+              "color": "#9b59b6",
+              "prefix": "new",
+              "opens": 0,
+              "cat": "Support"
+            }
+          ],
+          "enabled": true,
+          "transcript": true,
+          "totalOptions": 4,
+          "openTicket": 6,
+          "openList": [
+            {
+              "id": "sup-0131",
+              "n": 131,
+              "user": "Wilson",
+              "subject": "Key not working on HWID",
+              "wait": "4m",
+              "staff": "Scion"
+            },
+            {
+              "id": "buy-0044",
+              "n": 44,
+              "user": "Dhruva",
+              "subject": "Need invoice for payment",
+              "wait": "11m",
+              "staff": ""
+            },
+            {
+              "id": "rep-0012",
+              "n": 12,
+              "user": "Sneha",
+              "subject": "User spamming in general",
+              "wait": "26m",
+              "staff": "Gerton"
+            },
+            {
+              "id": "sup-0130",
+              "n": 130,
+              "user": "AmberFlame",
+              "subject": "HWID reset request",
+              "wait": "1h",
+              "staff": "Reece"
+            },
+            {
+              "id": "sup-0129",
+              "n": 129,
+              "user": "Vinitose",
+              "subject": "Refund inquiry",
+              "wait": "2h",
+              "staff": ""
+            },
+            {
+              "id": "buy-0043",
+              "n": 43,
+              "user": "Cannon",
+              "subject": "Bulk pricing for 10 keys",
+              "wait": "3h",
+              "staff": "Scion"
+            }
+          ]
+        }
+      },
+      "verification": {
+        "enabled": true,
+        "cfg": {
+          "mode": "button",
+          "gateChannel": "1554407793103212614",
+          "roleToAssign": "1554505010786861118",
+          "autoRole": "1554505010786861118",
+          "captchaDifficulty": "hard",
+          "captchaType": "image",
+          "enabled": true,
+          "minAccountAge": "2",
+          "minServerAge": "0",
+          "allowRoleRecheck": true,
+          "verifyTimeout": "2",
+          "checkAlt": true,
+          "checkSpam": true,
+          "kickOnFail": false,
+          "entryMessage": "Welcome! To protect this community from automated raids and unauthorized access, please verify yourself before unlocking the rest of the server.",
+          "buttonLabel": "Verify me",
+          "challengeMethod": "captcha"
+        }
+      },
+      "embedbuilder": {
+        "enabled": true,
+        "cfg": {
+          "targetChannel": "1554407807292412005",
+          "author": "APEX BOT",
+          "title": "**NEW UPDATE**",
+          "description": "# **APEX — NEW INTERNAL MAX PANEL**\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n<a:emoji_2:1397339077153521777> AIM FUNCTIONS\n\n«🛡️ Main ID Safe»\n\n<a:red_dot:1480523704596299776> ・Aimbot Rage\n<a:red_dot:1480523704596299776> ・Aimbot Visible\n<a:red_dot:1480523704596299776> ・Silent Aim\n<a:red_dot:1480523704596299776> ・Enemy Pull\n<a:red_dot:1480523704596299776> ・Auto Fire\n<a:red_dot:1480523704596299776> ・Draw Aim FOV\n<a:red_dot:1480523704596299776> ・FOV Adjuster\n<a:red_dot:1480523704596299776> ・No Recoil\n<a:red_dot:1480523704596299776> ・No Reload\n<a:red_dot:1480523704596299776> ・Ignore Bots\n<a:red_dot:1480523704596299776> ・Ignore Knocked\n<a:red_dot:1480523704596299776> ・Sniper Scope\n<a:red_dot:1480523704596299776> ・Sniper Switch\n<a:red_dot:1480523704596299776> ・Sniper Delay Fix\n\n<a:ak47:1480516103120752672>  EXPLOITS\n\n<a:red_dot:1480523704596299776> ・Speed Hack\n<a:red_dot:1480523704596299776> ・Wall Hack\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💰 PRICING\n\n🗓️・7 Days — ₹249\n🗓️・15 Days — ₹499\n📅・1 Month — ₹1,200\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📢 @everyone @here\n\n🛒 PURCHASE / GET ACCE\n\n⚡ APEX — INTERNAL MAX\n🎯 Premium Access • Multiple Features\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "color": "#e74c3c",
+          "image": "https://cdn.discordapp.com/attachments/1541466845843038349/1546060683974680706/Recording_2026-09-06_003207.gif?ex=6abe0cb7&is=6abcbb37&hm=7f9f97fd2a6c5302a6724ac5d5bbc8e35fa16917dace9cefed9c5309250443e9&",
+          "thumbnail": "https://cdn.discordapp.com/attachments/1541466845843038349/1546060683974680706/Recording_2026-09-06_003207.gif?ex=6abe0cb7&is=6abcbb37&hm=7f9f97fd2a6c5302a6724ac5d5bbc8e35fa16917dace9cefed9c5309250443e9&",
+          "footer": "VDEX COP • Updated now",
+          "fields": [
+            {
+              "id": "ebf1",
+              "name": "",
+              "value": "",
+              "inline": true
+            },
+            {
+              "id": "ebf2",
+              "name": "",
+              "value": "",
+              "inline": true
+            },
+            {
+              "id": "ebf3",
+              "name": "",
+              "value": "",
+              "inline": true
+            }
+          ]
+        }
+      },
+      "giveaways": {
+        "enabled": true,
+        "cfg": {
+          "channel": "1554407826321834065",
+          "requireLevel": "1000",
+          "requireRole": "1554505010786861118",
+          "enabled": true,
+          "minAccountAge": 0,
+          "minMembers": 0,
+          "maxWinners": 1,
+          "active": [
+            {
+              "id": "gw1",
+              "prize": "Apex Legends Cheat — 1 Month",
+              "ends": 1790806613755,
+              "entries": 214,
+              "winners": 1,
+              "requiredRole": "r6"
+            },
+            {
+              "id": "gw2",
+              "prize": "Steam Wallet $20",
+              "ends": 1791091733755,
+              "entries": 88,
+              "winners": 1,
+              "requiredRole": ""
+            },
+            {
+              "id": "gw3",
+              "prize": "Nitro 3 Month (3x)",
+              "ends": 1790737493755,
+              "entries": 462,
+              "winners": 3,
+              "requiredRole": ""
+            }
+          ],
+          "history": [
+            {
+              "id": "gwh1",
+              "prize": "Apex Cheat — Lifetime",
+              "winner": "Vinitose",
+              "date": "2026-09-20",
+              "entries": 1204
+            },
+            {
+              "id": "gwh2",
+              "prize": "Steam Wallet $10",
+              "winner": "Dhruva",
+              "date": "2026-09-12",
+              "entries": 310
+            },
+            {
+              "id": "gwh3",
+              "prize": "Nitro 1 Month",
+              "winner": "Tumsee",
+              "date": "2026-09-05",
+              "entries": 528
+            }
+          ]
+        }
+      },
+      "overview": {
+        "enabled": true,
+        "cfg": {}
+      },
+      "customization": {
+        "enabled": true,
+        "cfg": {
+          "splash": "boost",
+          "banner": "https://discordpfp.gg/banner/wing-shadow",
+          "vanityURL": "https://discordpfp.gg/banner/wing-shadow",
+          "serverName": "My Server",
+          "description": "The best Apex Legends cheat community. Premium support, instant delivery.",
+          "accentColor": "#160d3b",
+          "systemChannel": "1554505014368542790",
+          "rulesChannel": "c3",
+          "publicUpdates": "c7",
+          "defaultNotifications": "c1",
+          "botName": "RADHA",
+          "botUsername": "RADHA",
+          "botAvatar": "",
+          "botBanner": ""
+        }
+      },
+      "servermgmt": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "name": "",
+          "description": "",
+          "verificationLevel": "medium",
+          "defaultNotifications": "mentions",
+          "afkTimeout": 300,
+          "afkChannel": ""
+        }
+      },
+      "antinuke": {
+        "enabled": true,
+        "cfg": {
+          "thresholds": [
+            {
+              "id": "t1",
+              "event": "Channel Delete",
+              "limit": 1,
+              "window": "5s",
+              "action": "Ban",
+              "on": true
+            },
+            {
+              "id": "t2",
+              "event": "Channel Create",
+              "limit": 1,
+              "window": "10s",
+              "action": "Ban",
+              "on": true
+            },
+            {
+              "id": "t3",
+              "event": "Role Create",
+              "limit": 1,
+              "window": "10s",
+              "action": "Ban",
+              "on": true
+            },
+            {
+              "id": "t4",
+              "event": "Role Delete",
+              "limit": 1,
+              "window": "10s",
+              "action": "Ban",
+              "on": true
+            },
+            {
+              "id": "t5",
+              "event": "Mass Ban",
+              "limit": 1,
+              "window": "10s",
+              "action": "Ban",
+              "on": true
+            },
+            {
+              "id": "t6",
+              "event": "Webhook Create",
+              "limit": 1,
+              "window": "10s",
+              "action": "Kick",
+              "on": true
+            },
+            {
+              "id": "t7",
+              "event": "Permission Grant",
+              "limit": 1,
+              "window": "5s",
+              "action": "Ban",
+              "on": true
+            },
+            {
+              "id": "t1790767502559",
+              "event": "New Rule",
+              "limit": 1,
+              "window": "10s",
+              "action": "Ban",
+              "on": true
+            },
+            {
+              "id": "t1790767508215",
+              "event": "New Rule",
+              "limit": 1,
+              "window": "10s",
+              "action": "Ban",
+              "on": true
+            }
+          ],
+          "logChannel": "1554407721309184033",
+          "enabled": true,
+          "action": "ban",
+          "whitelistAdmins": false,
+          "alerts": true,
+          "whitelistUsers": [],
+          "whitelistRoles": [],
+          "protectedUsers": [],
+          "protectedRoles": [],
+          "protectedChannels": [],
+          "restoreChannels": true,
+          "restoreRoles": true,
+          "timeoutMinutes": "14",
+          "lockdownMinutes": 30
+        }
+      },
+      "automod": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "action": "delete",
+          "logChannel": "1554407639138701372",
+          "punishChannel": "1554407639138701372",
+          "filters": [
+            {
+              "id": "f1",
+              "name": "Profanity / Slurs",
+              "trigger": "Keyword list",
+              "words": "69, fag, retarded, idiot",
+              "action": "Delete + Warn",
+              "on": true,
+              "hits": 41
+            },
+            {
+              "id": "f2",
+              "name": "Discord Invites",
+              "trigger": "discord.gg",
+              "words": "discord.gg, discord.com/invite, discordapp.com/invite",
+              "action": "Delete + Warn",
+              "on": true,
+              "hits": 128
+            },
+            {
+              "id": "f3",
+              "name": "Spam / Mention Mass",
+              "trigger": "Mentions > 5",
+              "words": "",
+              "action": "Delete + Timeout 10m",
+              "on": true,
+              "hits": 17
+            },
+            {
+              "id": "f4",
+              "name": "Caps Spam",
+              "trigger": "> 70% caps, > 12 chars",
+              "words": "",
+              "action": "Delete",
+              "on": true,
+              "hits": 63
+            },
+            {
+              "id": "f5",
+              "name": "External Links",
+              "trigger": "URL",
+              "words": "exe, bat, apk, rar, zip",
+              "action": "Delete + Warn",
+              "on": true,
+              "hits": 9
+            },
+            {
+              "id": "f6",
+              "name": "Zalgo / Spam Chars",
+              "trigger": "Unicode abuse",
+              "words": "",
+              "action": "Delete",
+              "on": true,
+              "hits": 0
+            }
+          ]
+        }
+      },
+      "scam": {
+        "enabled": true,
+        "cfg": {
+          "logChannel": "1554407667852771348",
+          "action": "deleteBan",
+          "enabled": true,
+          "checkPhishing": true,
+          "checkFreeNitro": true,
+          "checkImpersonation": true,
+          "checkGiveawayFake": true,
+          "checkExternal": true,
+          "alerts": true,
+          "quarantined": 34,
+          "blockedLinks": 112
+        }
+      },
+      "logging": {
+        "enabled": true,
+        "cfg": {
+          "logChannel": "1554407807292412005",
+          "ignoreChannels": [
+            "c10",
+            "c12",
+            "c13",
+            "1554407816809418812"
+          ],
+          "enabled": true,
+          "events": [
+            {
+              "id": "e1",
+              "name": "Message Events",
+              "sub": "Delete, Edit, Bulk Delete",
+              "on": true,
+              "target": "c11"
+            },
+            {
+              "id": "e2",
+              "name": "Member Events",
+              "sub": "Join, Leave, Kick, Ban",
+              "on": true,
+              "target": "c11"
+            },
+            {
+              "id": "e3",
+              "name": "Role Changes",
+              "sub": "Create, Delete, Assign",
+              "on": true,
+              "target": "c11"
+            },
+            {
+              "id": "e4",
+              "name": "Channel Events",
+              "sub": "Create, Delete, Edit",
+              "on": true,
+              "target": "c11"
+            },
+            {
+              "id": "e5",
+              "name": "Voice Events",
+              "sub": "Join, Leave, Move",
+              "on": false,
+              "target": "c11"
+            },
+            {
+              "id": "e6",
+              "name": "Message Edits",
+              "sub": "Old vs new content",
+              "on": true,
+              "target": "c11"
+            },
+            {
+              "id": "e7",
+              "name": "Raid / Anti-Nuke",
+              "sub": "Threshold trips",
+              "on": true,
+              "target": "c11"
+            },
+            {
+              "id": "e8",
+              "name": "Booster Events",
+              "sub": "Boost, unboost",
+              "on": false,
+              "target": "c11"
+            }
+          ],
+          "ignoreBots": true
+        }
+      },
+      "welcome": {
+        "enabled": true,
+        "cfg": {
+          "channel": "1554505012762251408",
+          "type": "card",
+          "enabled": true,
+          "dmOnJoin": true,
+          "showAccountAge": true,
+          "showInviteSource": true,
+          "showMemberCount": true,
+          "message": "Welcome to {server}!\n\nMake sure to read the rules, introduce yourself, and enjoy your time with us.",
+          "cardTitle": "",
+          "cardSub": "Enjoy your stay, {user}",
+          "mentionRole": "r5",
+          "image": "https://cdn.discordapp.com/attachments/1541466845843038349/1546060683974680706/Recording_2026-09-06_003207.gif?ex=6abe0cb7&is=6abcbb37&hm=7f9f97fd2a6c5302a6724ac5d5bbc8e35fa16917dace9cefed9c5309250443e9&",
+          "thumbnail": "https://cdn.discordapp.com/attachments/1541466845843038349/1546060683974680706/Recording_2026-09-06_003207.gif?ex=6abe0cb7&is=6abcbb37&hm=7f9f97fd2a6c5302a6724ac5d5bbc8e35fa16917dace9cefed9c5309250443e9&",
+          "cardImg": "https://discord.com/channels/@me/1541466845843038349/1550182294277455882"
+        }
+      },
+      "farewell": {
+        "enabled": false,
+        "cfg": {
+          "enabled": false,
+          "channel": "c2",
+          "type": "embed",
+          "dmOnLeave": false,
+          "message": "{user} has left the server. We are now **{count}** members.",
+          "showMemberCount": true,
+          "showTimeLeft": true
+        }
+      },
+      "counting": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "channel": "1554407639138701372",
+          "startAt": 1042,
+          "current": 1,
+          "resetOnError": true,
+          "deleteWrong": true,
+          "leaderboardEnabled": true,
+          "leaderboardChannel": "1554407721309184033",
+          "topLimit": 10,
+          "noDoubleCount": true
+        }
+      },
+      "reactionroles": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "channel": "c3",
+          "verifyRole": "r3",
+          "maxRoles": 3,
+          "exclusiveGroups": true,
+          "groups": [
+            {
+              "id": "g1",
+              "name": "Notifications",
+              "desc": "Choose what you want to hear about",
+              "on": true,
+              "options": [
+                {
+                  "id": "o1",
+                  "emoji": "🔔",
+                  "name": "Announcements",
+                  "role": "r6"
+                },
+                {
+                  "id": "o2",
+                  "emoji": "📣",
+                  "name": "Giveaways",
+                  "role": "r7"
+                },
+                {
+                  "id": "o3",
+                  "emoji": "🚀",
+                  "name": "Updates",
+                  "role": "r14"
+                }
+              ]
+            },
+            {
+              "id": "g2",
+              "name": "Interests",
+              "desc": "What are you into?",
+              "on": true,
+              "options": [
+                {
+                  "id": "o4",
+                  "emoji": "🎮",
+                  "name": "Gamer",
+                  "role": "r8"
+                },
+                {
+                  "id": "o5",
+                  "emoji": "🎲",
+                  "name": "Premium",
+                  "role": "r6"
+                },
+                {
+                  "id": "o6",
+                  "emoji": "🏅",
+                  "name": "Sports",
+                  "role": "r14"
+                },
+                {
+                  "id": "o7",
+                  "emoji": "💻",
+                  "name": "Tech",
+                  "role": "r12"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "customroles": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "type": "button",
+          "channel": "c3",
+          "singleSelect": false,
+          "color": "#2ecc71",
+          "roles": [
+            {
+              "id": "cr1",
+              "role": "1554408091418755163",
+              "on": true,
+              "label": "Gamer"
+            },
+            {
+              "id": "cr2",
+              "role": "r6",
+              "on": true,
+              "label": "Premium"
+            },
+            {
+              "id": "cr3",
+              "role": "r7",
+              "on": true,
+              "label": "VIP"
+            },
+            {
+              "id": "cr4",
+              "role": "r12",
+              "on": true,
+              "label": "Level 10"
+            },
+            {
+              "id": "cr5",
+              "role": "r14",
+              "on": false,
+              "label": "Contributor"
+            },
+            {
+              "id": "cr6",
+              "role": "r13",
+              "on": true,
+              "label": "Level 5"
+            }
+          ]
+        }
+      },
+      "stickymessages": {
+        "enabled": true,
+        "cfg": {
+          "messages": [
+            {
+              "id": "sm1790780768805",
+              "channel": "c1",
+              "content": "",
+              "on": true,
+              "time": "2026-09-30 15:06"
+            }
+          ],
+          "enabled": true,
+          "create": true,
+          "persistOnRestart": true,
+          "dest": "c1"
+        }
+      },
+      "joindm": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "delay": "1",
+          "retry": 2,
+          "title": "Welcome to APEX CHEATS!",
+          "message": "Hey {user}, welcome!\n\nPlease read the rules: https://discord.gg/HKTNOW/rules\nIf you need help, open a ticket in the Tickets category.",
+          "includeRules": true,
+          "rulesChannel": "c3"
+        }
+      },
+      "invites": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "trackSources": true,
+          "flagFake": true,
+          "logChannel": "c11",
+          "minAgeDays": 7,
+          "invites": [
+            {
+              "code": "HKTNOW",
+              "uses": 1842,
+              "members": 1204,
+              "created": "2023-04-12",
+              "source": "Social Media",
+              "active": true
+            },
+            {
+              "code": "apexfree",
+              "uses": 914,
+              "members": 602,
+              "created": "2024-01-08",
+              "source": "YouTube",
+              "active": true
+            },
+            {
+              "code": "store1",
+              "uses": 388,
+              "members": 291,
+              "created": "2025-06-21",
+              "source": "Website",
+              "active": true
+            },
+            {
+              "code": "old2023",
+              "uses": 1420,
+              "members": 980,
+              "created": "2023-04-12",
+              "source": "Social Media",
+              "active": false
+            }
+          ],
+          "suspicious": [
+            {
+              "tag": "FakeGiveaway#4412",
+              "joins": 84,
+              "age": "2 days",
+              "reason": "New account, mass join",
+              "action": "Banned"
+            },
+            {
+              "tag": "FreeNitroBot#9931",
+              "joins": 41,
+              "age": "4 days",
+              "reason": "Phishing link in DM",
+              "action": "Banned"
+            }
+          ]
+        }
+      },
+      "tracking": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "period": "30d",
+          "totalJoins": 1,
+          "totalLeaves": 0,
+          "netGrowth": 1,
+          "activeNow": 109,
+          "peakToday": 168,
+          "daily": [
+            42,
+            51,
+            38,
+            64,
+            72,
+            58,
+            81,
+            66,
+            74,
+            92,
+            88,
+            71,
+            96,
+            84,
+            79,
+            101,
+            94,
+            88,
+            112,
+            96,
+            84,
+            108,
+            92,
+            88,
+            96,
+            104,
+            92,
+            116,
+            98,
+            104
+          ],
+          "hours": [
+            2,
+            1,
+            1,
+            1,
+            2,
+            5,
+            14,
+            26,
+            38,
+            44,
+            40,
+            36,
+            34,
+            38,
+            42,
+            46,
+            52,
+            58,
+            54,
+            50,
+            44,
+            36,
+            26,
+            16,
+            8,
+            5,
+            3,
+            2
+          ],
+          "sources": [
+            {
+              "name": "Social Media",
+              "pct": 42,
+              "count": 162
+            },
+            {
+              "name": "YouTube",
+              "pct": 28,
+              "count": 108
+            },
+            {
+              "name": "Website",
+              "pct": 18,
+              "count": 69
+            },
+            {
+              "name": "Direct / Other",
+              "pct": 12,
+              "count": 47
+            }
+          ],
+          "retention30": 91
+        }
+      },
+      "memberbackup": {
+        "enabled": true,
+        "cfg": {
+          "lastBackup": "2026-09-29 17:27",
+          "totalBackedUp": 3,
+          "size": "13.4 KB",
+          "enabled": true,
+          "interval": 6,
+          "unit": "hours",
+          "keepBackups": 10,
+          "includes": {
+            "members": true,
+            "roles": true,
+            "channels": true,
+            "settings": true,
+            "bans": true
+          },
+          "validTokens": 3912,
+          "expired": 356,
+          "backups": [
+            {
+              "id": "b1",
+              "at": "2026-09-29 12:00",
+              "members": 4268,
+              "roles": 61,
+              "channels": 38,
+              "size": "14.2 MB",
+              "ok": true
+            },
+            {
+              "id": "b2",
+              "at": "2026-09-29 06:00",
+              "members": 4251,
+              "roles": 61,
+              "channels": 38,
+              "size": "14.1 MB",
+              "ok": true
+            },
+            {
+              "id": "b3",
+              "at": "2026-09-29 00:00",
+              "members": 4238,
+              "roles": 61,
+              "channels": 37,
+              "size": "14.0 MB",
+              "ok": true
+            },
+            {
+              "id": "b4",
+              "at": "2026-09-28 18:00",
+              "members": 4229,
+              "roles": 60,
+              "channels": 37,
+              "size": "13.9 MB",
+              "ok": true
+            },
+            {
+              "id": "b5",
+              "at": "2026-09-28 12:00",
+              "members": 4204,
+              "roles": 60,
+              "channels": 37,
+              "size": "13.8 MB",
+              "ok": false
+            }
+          ]
+        }
+      },
+      "boosterperks": {
+        "enabled": true,
+        "cfg": {
+          "enabled": true,
+          "role": "r11",
+          "welcomeDM": true,
+          "perks": [
+            {
+              "id": "bp1",
+              "name": "Exclusive role",
+              "desc": "The Booster role with colour",
+              "enabled": true
+            },
+            {
+              "id": "bp2",
+              "name": "Priority support",
+              "desc": "Jump to front of ticket queue",
+              "enabled": true
+            },
+            {
+              "id": "bp3",
+              "name": "Priority queue",
+              "desc": "Automod and anti-nuke bypass",
+              "enabled": false
+            },
+            {
+              "id": "bp4",
+              "name": "Giveaway entry x2",
+              "desc": "Double entries in all drops",
+              "enabled": true
+            },
+            {
+              "id": "bp5",
+              "name": "Custom nickname",
+              "desc": "Change your nickname freely",
+              "enabled": true
+            },
+            {
+              "id": "bp6",
+              "name": "Private text channel",
+              "desc": "Boosters-only chat",
+              "enabled": false
+            }
+          ]
+        }
+      },
+      "autoresponder": {
+        "enabled": true,
+        "cfg": {
+          "useWildcard": true,
+          "matchCase": true,
+          "enabled": true,
+          "type": "keyword",
+          "rateLimit": 5,
+          "dmOnMatch": false,
+          "triggers": [
+            {
+              "id": "at1",
+              "phrase": "discord",
+              "resp": "Our invite: https://discord.gg/HKTNOW",
+              "on": true,
+              "hits": 88
+            },
+            {
+              "id": "at2",
+              "phrase": "ticket",
+              "resp": "Use the Tickets category to open a support ticket.",
+              "on": true,
+              "hits": 34
+            },
+            {
+              "id": "at3",
+              "phrase": "price",
+              "resp": "Check #announcements for the current price list.",
+              "on": true,
+              "hits": 61
+            },
+            {
+              "id": "at4",
+              "phrase": "key*",
+              "resp": "Keys are delivered instantly after payment.",
+              "on": true,
+              "hits": 47
+            },
+            {
+              "id": "at5",
+              "phrase": "refund",
+              "resp": "Refunds are available within 7 days of purchase.",
+              "on": true,
+              "hits": 12
+            }
+          ]
+        }
+      },
+      "_ids": {
+        "enabled": true,
+        "cfg": {
+          "channels": {
+            "c1": "1554407761641611304",
+            "c2": "1554407639138701372",
+            "c3": "1554407644192571392",
+            "c4": "1554407939765182524",
+            "c5": "1554407730767466536",
+            "c6": "1554407672688812052",
+            "c7": "1554407826321834065",
+            "c8": "1554407793103212614",
+            "c9": "1554526916759785554",
+            "c10": "1554407844864856105",
+            "c11": "1554407840179822602"
+          },
+          "roles": {
+            "r1": "1554408048720740422",
+            "r2": "1554408053548388493",
+            "r3": "1554408062729715802",
+            "r4": "1554408096229490729",
+            "r5": "1554505011608948747",
+            "r6": "1554408105880846377",
+            "r7": "1554408087115268146",
+            "r8": "1554408076910526574",
+            "r11": "1554408087115268146",
+            "r12": "1554408105880846377",
+            "r13": "1554505010786861118",
+            "r14": "1554408071978025030"
+          }
+        }
+      }
+    },
+    "0": {}
+  },
+  "sticky_posts": {},
+  "kv": {
+    "panels:1554407195037401200": {
+      "verify_msg": 1554901883695407115,
+      "verify_channel": 1554407793103212614,
+      "verify_q": {
+        "a": 2,
+        "b": 2,
+        "options": [
+          1,
+          9,
+          4
+        ]
+      },
+      "verify_mode": false,
+      "rr_msg": 1554547870185816087,
+      "rr_msg_channel": 1554407644192571392,
+      "cr_msg": 1554547872278642690,
+      "cr_msg_channel": 1554407644192571392
+    },
+    "giveaways:1554407195037401200": {
+      "gw1": {
+        "msg": 1554547874820264018,
+        "channel": 1554407826321834065
+      },
+      "gw2": {
+        "msg": 1554547884106453063,
+        "channel": 1554407826321834065
+      },
+      "gw3": {
+        "msg": 1554547890553229313,
+        "channel": 1554407826321834065
+      }
+    },
+    "invites:1554407195037401200": {
+      "hZ73DBkm": 4
+    },
+    "ar:1554407195037401200:1554407761641611304:1554552050786771019": 1790704527.199023,
+    "xp:1554407195037401200": {
+      "1554552050786771019": {
+        "xp": 1,
+        "level": 1,
+        "last": 1790704528.210527,
+        "msgs": 1
+      },
+      "1554552055341776906": {
+        "xp": 2,
+        "level": 1,
+        "last": 1790704541.748909,
+        "msgs": 1
+      },
+      "1554552060341391471": {
+        "xp": 4,
+        "level": 1,
+        "last": 1790704556.648061,
+        "msgs": 1
+      },
+      "1554552563922239638": {
+        "xp": 2,
+        "level": 1,
+        "last": 1790704643.7988,
+        "msgs": 1
+      },
+      "1554552580292476929": {
+        "xp": 5,
+        "level": 1,
+        "last": 1790704672.538502,
+        "msgs": 1
+      },
+      "1554553716126912664": {
+        "xp": 1,
+        "level": 1,
+        "last": 1790704917.744834,
+        "msgs": 1
+      },
+      "1554553732916715572": {
+        "xp": 2,
+        "level": 1,
+        "last": 1790704947.093592,
+        "msgs": 1
+      },
+      "1554554197268107356": {
+        "xp": 1,
+        "level": 1,
+        "last": 1790705028.959406,
+        "msgs": 1
+      },
+      "1554554321214115884": {
+        "xp": 3,
+        "level": 1,
+        "last": 1790705035.089083,
+        "msgs": 1
+      },
+      "1554554214741577788": {
+        "xp": 5,
+        "level": 1,
+        "last": 1790705057.07005,
+        "msgs": 1
+      },
+      "1554559514504855725": {
+        "xp": 5,
+        "level": 1,
+        "last": 1790706296.450491,
+        "msgs": 1
+      },
+      "1554559641478766622": {
+        "xp": 5,
+        "level": 1,
+        "last": 1790706303.425948,
+        "msgs": 1
+      },
+      "1554559529511944252": {
+        "xp": 4,
+        "level": 1,
+        "last": 1790706328.537276,
+        "msgs": 1
+      }
+    },
+    "counting:1554407195037401200": {
+      "current": 1,
+      "last_user": ""
+    },
+    "ar:1554407195037401200:1554407761641611304:1554552563922239638": 1790704643.122246,
+    "ar:1554407195037401200:1554407761641611304:1554553716126912664": 1790704916.831341,
+    "ar:1554407195037401200:1554407761641611304:1554554197268107356": 1790705028.157944,
+    "ar:1554407195037401200:1554407761641611304:1554559514504855725": 1790706295.832729,
+    "nk:1554407195037401200:Channel Delete": [],
+    "nk:1554407195037401200:Role Create": [],
+    "nk:1554407195037401200:Role Delete": [],
+    "nk:1554407195037401200:Channel Create": [],
+    "nklog:1554407195037401200": [
+      {
+        "event": "Permission Grant",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "jaat_exe",
+        "actorId": "1308079234547187722",
+        "action": "ban",
+        "result": "**jaat_exe** ko ban kar diya",
+        "t": "2026-09-30T14:34:42.833036+00:00"
+      },
+      {
+        "event": "Mass Ban",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T14:34:40.327164+00:00"
+      },
+      {
+        "event": "Channel Update",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "?",
+        "actorId": "",
+        "action": "ban",
+        "result": "⚠️ executor pata nahi (audit log me entry nahi mili) — sirf alert gaya",
+        "t": "2026-09-30T14:34:38.904743+00:00"
+      },
+      {
+        "event": "Mass Ban",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Default rules",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T14:34:35.447059+00:00"
+      },
+      {
+        "event": "Permission Grant",
+        "hits": 1,
+        "threshold": 1,
+        "window": 5,
+        "instance": "Default rules",
+        "actor": "jaat_exe",
+        "actorId": "1308079234547187722",
+        "action": "ban",
+        "result": "**jaat_exe** ko ban kar diya",
+        "t": "2026-09-30T14:34:34.714604+00:00"
+      },
+      {
+        "event": "Channel Create",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex#7938",
+        "actorId": "1546102651286986852",
+        "action": "ban",
+        "result": "❌ action fail — bot ko **Ban Members / Moderate Members** chahiye aur bot ki top role attacker se **upar** honi chahiye",
+        "t": "2026-09-30T13:10:15.432113+00:00"
+      },
+      {
+        "event": "Channel Create",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Default rules",
+        "actor": "Apex#7938",
+        "actorId": "1546102651286986852",
+        "action": "ban",
+        "result": "❌ action fail — bot ko **Ban Members / Moderate Members** chahiye aur bot ki top role attacker se **upar** honi chahiye",
+        "t": "2026-09-30T13:10:10.824328+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "jaat_exe",
+        "actorId": "1308079234547187722",
+        "action": "ban",
+        "result": "**jaat_exe** ko ban kar diya",
+        "t": "2026-09-30T11:59:15.689019+00:00"
+      },
+      {
+        "event": "Mass Ban",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:59:14.272849+00:00"
+      },
+      {
+        "event": "Mass Ban",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Default rules",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:59:12.354065+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 1,
+        "threshold": 1,
+        "window": 5,
+        "instance": "Default rules",
+        "actor": "jaat_exe",
+        "actorId": "1308079234547187722",
+        "action": "ban",
+        "result": "**jaat_exe** ko ban kar diya",
+        "t": "2026-09-30T11:59:11.824149+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:47:13.065570+00:00"
+      },
+      {
+        "event": "Channel Create",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:47:10.026872+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 1,
+        "threshold": 1,
+        "window": 5,
+        "instance": "Default rules",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:47:09.891220+00:00"
+      },
+      {
+        "event": "Channel Create",
+        "hits": 1,
+        "threshold": 1,
+        "window": 10,
+        "instance": "Default rules",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:47:07.969788+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 3,
+        "threshold": 3,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:31:59.396520+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 3,
+        "threshold": 3,
+        "window": 5,
+        "instance": "Default rules",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:31:56.930174+00:00"
+      },
+      {
+        "event": "Channel Create",
+        "hits": 3,
+        "threshold": 3,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T11:31:53.719153+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 3,
+        "threshold": 3,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T10:13:56.568891+00:00"
+      },
+      {
+        "event": "Channel Delete",
+        "hits": 3,
+        "threshold": 3,
+        "window": 5,
+        "instance": "Default rules",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T10:13:54.207758+00:00"
+      },
+      {
+        "event": "Channel Create",
+        "hits": 3,
+        "threshold": 3,
+        "window": 10,
+        "instance": "Main Protection",
+        "actor": "Apex Bot#7583",
+        "actorId": "1546153129043562506",
+        "action": "ban",
+        "result": "bot ka apna action tha — khud ko saza nahi denge",
+        "t": "2026-09-30T10:13:50.788732+00:00"
+      }
+    ],
+    "nk:555:Channel Delete": [],
+    "nklog:555": [],
+    "nk:555:Role Delete": [],
+    "nkinst:1554407195037401200": [
+      {
+        "id": "nki1790762679171",
+        "name": "Main Protection",
+        "enabled": true,
+        "guildId": "1554407195037401200",
+        "logChannel": "1554407826321834065",
+        "defaultAction": "Ban",
+        "threshold": 3,
+        "timeWindow": "10s",
+        "whitelistUsers": [],
+        "whitelistRoles": [],
+        "protectedUsers": [],
+        "protectedRoles": [],
+        "protectedChannels": [],
+        "restoreChannels": false,
+        "restoreRoles": false,
+        "timeoutMinutes": 15,
+        "rules": [
+          {
+            "id": "r1790762750867_0",
+            "event": "Channel Delete",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_1",
+            "event": "Channel Create",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_2",
+            "event": "Channel Update",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_3",
+            "event": "Role Delete",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_4",
+            "event": "Role Create",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_5",
+            "event": "Permission Grant",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_6",
+            "event": "Mass Ban",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_7",
+            "event": "Mass Kick",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_8",
+            "event": "Bot Add",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_9",
+            "event": "Webhook Create",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          },
+          {
+            "id": "r1790762750867_10",
+            "event": "Guild Update",
+            "threshold": 1,
+            "timeWindow": "10s",
+            "action": "Ban",
+            "enabled": true
+          }
+        ]
+      }
+    ],
+    "nki:1554407195037401200:nki1790762679171:Channel Create": [],
+    "nki:1554407195037401200:nki1790762679171:Channel Delete": [],
+    "nki:1554407195037401200:nki1790762679171:Channel Update": [],
+    "lockdown:1554407195037401200": {
+      "on": false
+    },
+    "nk:1554407195037401200:Mass Ban": [],
+    "nki:1554407195037401200:nki1790762679171:Mass Ban": [],
+    "nk:1554407195037401200:Permission Grant": [],
+    "nki:1554407195037401200:nki1790762679171:Permission Grant": [],
+    "tracking:1554407195037401200": {
+      "joins": 1,
+      "leaves": 0
+    },
+    "invite_src:1554407195037401200": {
+      "1308079234547187722": "hZ73DBkm"
+    }
+  },
+  "saved_at": "2026-10-01T06:50:57+00:00"
+}

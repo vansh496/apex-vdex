@@ -1,0 +1,33 @@
+# Render Blueprint — bot + dashboard ek hi web service me
+#   Deploy: GitHub repo ko Render par "New +" → "Blueprint" se connect karo.
+services:
+  - type: web
+    name: apex-vdex
+    runtime: python
+    plan: free
+    buildCommand: pip install -r discord-ticket-bot/requirements.txt
+    startCommand: cd discord-ticket-bot && python bot.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+      - key: INTENT_MEMBERS
+        value: "true"
+      - key: INTENT_MESSAGE_CONTENT
+        value: "true"
+      # dashboard connect key — Render khud strong value banayega;
+      # wo value Render → Environment me dikhegi, wahin se copy karna.
+      - key: DASHBOARD_KEY
+        generateValue: true
+      # neeche dono Render dashboard me BHARNA hoga (pehle deploy ke baad):
+      - key: DISCORD_TOKEN
+        sync: false
+      # pehle deploy ke baad: https://<tumhara-app>.onrender.com
+      - key: BASE_URL
+        sync: false
+      # Discord Developer Portal → OAuth2 me ye redirect add karna:
+      #   https://<tumhara-app>.onrender.com/auth/callback
+      - key: CLIENT_ID
+        sync: false
+      - key: CLIENT_SECRET
+        sync: false
