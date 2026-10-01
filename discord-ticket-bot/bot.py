@@ -15,6 +15,7 @@ import logging
 import random
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
@@ -1371,16 +1372,35 @@ def main() -> None:
         print(MISSING_TOKEN)
         raise SystemExit(1)
 
-    bot = TicketBot()
+    # Discord ka Cloudflare kabhi-kabhi datacenter IP ka login rate-limit
+    # kar deta hai (429 + error1015 HTML) — Render jaise host par deploy
+    # ekdum se fail na ho, isliye thoda ruk ke dobara try karte hain.
+    delay = 20.0
+    max_attempts = 6
     try:
-        bot.run(config.TOKEN, log_handler=None)
-    except discord.LoginFailure:
-        print("❌ Token galat hai. Developer Portal se naya token copy karo.")
-    except discord.PrivilegedIntentsRequired:
-        print(INTENTS_ERROR)
-        raise SystemExit(1)
-    except KeyboardInterrupt:
-        print("\n👋 Bot band ho gaya.")
+        for attempt in range(1, max_attempts + 1):
+            bot = TicketBot()
+            try:
+                bot.run(config.TOKEN, log_handler=None)
+                break
+            except discord.LoginFailure:
+                print("❌ Token galat hai. Developer Portal se naya token copy karo.")
+                break
+            except discord.PrivilegedIntentsRequired:
+                print(INTENTS_ERROR)
+                raise SystemExit(1)
+            except KeyboardInterrupt:
+                print("\n👋 Bot band ho gaya.")
+                break
+            except (discord.HTTPException, OSError) as exc:
+                if attempt >= max_attempts:
+                    raise
+                print(
+                    f"⏳ Discord ne login block/rate-limit kiya ({exc!r}) — "
+                    f"{delay:.0f}s baad retry {attempt}/{max_attempts - 1}..."
+                )
+                time.sleep(delay)
+                delay = min(delay * 2, 120.0)
     finally:
         store.save()
         log.info("State saved to %s", config.STATE_FILE)
