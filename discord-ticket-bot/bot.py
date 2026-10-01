@@ -1407,7 +1407,10 @@ def main() -> None:
                 first = (str(exc).splitlines() or [repr(exc)])[0][:150]
                 print(f"⏳ attempt {attempt}: {first} — {delay:.0f}s baad dobara")
                 await asyncio.sleep(delay)
-                delay = min(delay * 1.5, 300.0)
+                # CF1015 sliding window hota hai — baar-baar hit karne se
+                # limit khud extend hoti rehti hai. Thode quick retries ke
+                # baad30 minute ka sukoon — window clear ho sake.
+                delay = min(delay * 2, 1800.0)
 
     try:
         asyncio.run(_amain())
