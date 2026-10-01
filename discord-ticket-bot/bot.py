@@ -15,7 +15,6 @@ import logging
 import random
 import re
 import sys
-import time
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
@@ -763,6 +762,11 @@ class TicketBot(commands.Bot):
     async def setup_hook(self) -> None:
         global _BOT
         _BOT = self
+        # bot.start() ka retry (login block hone par) dobara invoke kar sakta
+        # hai — cogs/views sirf EK baar register hon.
+        if getattr(self, "_hooked", False):
+            return
+        self._hooked = True
         await self.add_cog(Commands(self))
         keys = all_panel_keys()
         self.add_view(PanelView(keys=keys))
@@ -778,16 +782,9 @@ class TicketBot(commands.Bot):
         # state ko baar-baar flush karo (pehle sirf shutdown par save hota tha)
         self._autosave_task = asyncio.create_task(self._autosave())
 
-        if config.WEB_ENABLED:
-            import web as webmod
-
-            webmod.set_callbacks(
-                close=finalize_close,
-                setup=run_setup,
-                panel=send_panel,
-                sticky=refresh_stickies,
-            )
-            await webmod.start(self)
+        # NOTE: web server ab main() me login SE PEHLE start hota hai —
+        # Render health check tab bhi pass hota hai jab Discord login
+        # Cloudflare (429/1015) se block ho.
 
     async def _autosave(self) -> None:
         """Har 5 second par dirty state JSON me likh deta hai."""
@@ -1372,35 +1369,50 @@ def main() -> None:
         print(MISSING_TOKEN)
         raise SystemExit(1)
 
-    # Discord ka Cloudflare kabhi-kabhi datacenter IP ka login rate-limit
-    # kar deta hai (429 + error1015 HTML) — Render jaise host par deploy
-    # ekdum se fail na ho, isliye thoda ruk ke dobara try karte hain.
-    delay = 20.0
-    max_attempts = 6
-    try:
-        for attempt in range(1, max_attempts + 1):
-            bot = TicketBot()
+    async def _amain() -> None:
+        bot = TicketBot()
+
+        # Web server PEHLE start — Render ka health check turant pass hota
+        # hai, chahe Discord login Cloudflare (429/1015) se block hi kyun na
+        # ho. Dashboard + OAuth isi se chalte hain; bot connect hote hi
+        # ticket/setup/panel sab live ho jayenge.
+        if config.WEB_ENABLED:
+            import web as webmod
+
+            webmod.set_callbacks(
+                close=finalize_close,
+                setup=run_setup,
+                panel=send_panel,
+                sticky=refresh_stickies,
+            )
+            await webmod.start(bot)
+
+        # Discord ka Cloudflare kabhi-kabhi datacenter IP ka login rate-limit
+        # kar deta hai (429 + error1015 HTML) — ruk-ruk ke dobara try karte
+        # hain; block utarte hi bot apne aap connect ho jayega.
+        delay = 20.0
+        attempt = 0
+        while True:
+            attempt += 1
             try:
-                bot.run(config.TOKEN, log_handler=None)
-                break
+                await bot.start(config.TOKEN)
+                return
             except discord.LoginFailure:
                 print("❌ Token galat hai. Developer Portal se naya token copy karo.")
-                break
+                return
             except discord.PrivilegedIntentsRequired:
                 print(INTENTS_ERROR)
                 raise SystemExit(1)
-            except KeyboardInterrupt:
-                print("\n👋 Bot band ho gaya.")
-                break
             except (discord.HTTPException, OSError) as exc:
-                if attempt >= max_attempts:
-                    raise
-                print(
-                    f"⏳ Discord ne login block/rate-limit kiya ({exc!r}) — "
-                    f"{delay:.0f}s baad retry {attempt}/{max_attempts - 1}..."
-                )
-                time.sleep(delay)
-                delay = min(delay * 2, 120.0)
+                first = (str(exc).splitlines() or [repr(exc)])[0][:150]
+                print(f"⏳ attempt {attempt}: {first} — {delay:.0f}s baad dobara")
+                await asyncio.sleep(delay)
+                delay = min(delay * 1.5, 300.0)
+
+    try:
+        asyncio.run(_amain())
+    except KeyboardInterrupt:
+        print("\n👋 Bot band ho gaya.")
     finally:
         store.save()
         log.info("State saved to %s", config.STATE_FILE)
