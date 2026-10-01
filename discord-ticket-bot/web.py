@@ -14,6 +14,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
+import os
 import re
 import secrets
 import time
@@ -43,6 +44,9 @@ _member_cache: dict[str, tuple[float, list[dict]]] = {}
 _counts_cache: dict[str, tuple[float, dict[str, int]]] = {}
 
 _rest_headers = {"User-Agent": "ApexTicketBot/1.0 (dashboard)"}
+
+# CF block hone par discord.com ke sabhi web calls proxy se (bot.py ke saath)
+_DISCORD_PROXY = os.getenv("DISCORD_PROXY") or None
 
 # bot ke end se aane wale callbacks (bot.py set karta hai)
 _callbacks: dict[str, Any] = {}
@@ -172,6 +176,7 @@ async def auth_callback(request: web.Request) -> web.Response:
             "https://discord.com/api/oauth2/token",
             data=data,
             headers={"Content-Type": "application/x-www-form-urlencoded"},
+            proxy=_DISCORD_PROXY,
         ) as resp:
             if resp.status != 200:
                 text = await resp.text()
@@ -183,10 +188,14 @@ async def auth_callback(request: web.Request) -> web.Response:
             tok = await resp.json()
 
         headers = {"Authorization": f"Bearer {tok['access_token']}"}
-        async with s.get("https://discord.com/api/users/@me", headers=headers) as r:
+        async with s.get(
+            "https://discord.com/api/users/@me", headers=headers, proxy=_DISCORD_PROXY
+        ) as r:
             me = await r.json()
         async with s.get(
-            "https://discord.com/api/users/@me/guilds", headers=headers
+            "https://discord.com/api/users/@me/guilds",
+            headers=headers,
+            proxy=_DISCORD_PROXY,
         ) as r:
             guilds = await r.json()
 
@@ -254,7 +263,9 @@ async def _resolve_invite(text: str) -> str | None:
         return None
     try:
         async with aiohttp.ClientSession(headers=_rest_headers) as s:
-            async with s.get(f"https://discord.com/api/invites/{code}") as r:
+            async with s.get(
+                f"https://discord.com/api/invites/{code}", proxy=_DISCORD_PROXY
+            ) as r:
                 if r.status != 200:
                     return None
                 data = await r.json()

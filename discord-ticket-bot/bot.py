@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import os
 import random
 import re
 import sys
@@ -756,7 +757,13 @@ class TicketBot(commands.Bot):
         intents = discord.Intents.default()
         intents.message_content = config.INTENT_MESSAGE_CONTENT
         intents.members = config.INTENT_MEMBERS
-        super().__init__(command_prefix="!", intents=intents)
+        # DISCORD_PROXY set ho to REST + gateway dono usi se jayenge
+        # (Render ke IP par CF block hone par kaam aata hai).
+        super().__init__(
+            command_prefix="!",
+            intents=intents,
+            proxy=os.getenv("DISCORD_PROXY") or None,
+        )
         self._synced = False
 
     async def setup_hook(self) -> None:
@@ -1371,6 +1378,8 @@ def main() -> None:
 
     async def _amain() -> None:
         bot = TicketBot()
+        if os.getenv("DISCORD_PROXY"):
+            print(f"🌐 Discord traffic proxy: {os.getenv('DISCORD_PROXY')}", flush=True)
 
         # Web server PEHLE start — Render ka health check turant pass hota
         # hai, chahe Discord login Cloudflare (429/1015) se block hi kyun na
@@ -1405,7 +1414,7 @@ def main() -> None:
                 raise SystemExit(1)
             except (discord.HTTPException, OSError) as exc:
                 first = (str(exc).splitlines() or [repr(exc)])[0][:150]
-                print(f"⏳ attempt {attempt}: {first} — {delay:.0f}s baad dobara")
+                print(f"⏳ attempt {attempt}: {first} — {delay:.0f}s baad dobara", flush=True)
                 await asyncio.sleep(delay)
                 # CF1015 sliding window hota hai — baar-baar hit karne se
                 # limit khud extend hoti rehti hai. Thode quick retries ke
